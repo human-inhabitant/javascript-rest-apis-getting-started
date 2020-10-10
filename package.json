@@ -27,7 +27,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "DEBUG=app,app:* nodemon app.js",
+    "start": "DEBUG=app,app:* nodemon index.js",
     "test": "mocha tests/**/*Tests.js"
   },
   "repository": {
