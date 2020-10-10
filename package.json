@@ -1,0 +1,46 @@
+{
+  "name": "javascript-rest-apis-getting-started",
+  "version": "0.6.5",
+  "description": "JavaScript REST APIs: Getting Started",
+  "main": "app.js",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.0",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^3.4.1",
+    "cookie-parser": "^1.4.5",
+    "debug": "^4.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "jquery": "^3.5.1",
+    "mongodb": "^3.6.2",
+    "mongoose": "^5.10.7",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.10.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "DEBUG=app,app:* nodemon app.js",
+    "test": "mocha tests/**/*Tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/human-inhabitant/javascript-rest-apis-getting-started.git"
+  },
+  "keywords": [
+    "Pluralsight"
+  ],
+  "author": "human-inhabitant",
+  "license": "copyleft-next-0.3.1",
+  "bugs": {
+    "url": "https://github.com/human-inhabitant/javascript-rest-apis-getting-started/issues"
+  },
+  "homepage": "https://github.com/human-inhabitant/javascript-rest-apis-getting-started#readme"
+}
