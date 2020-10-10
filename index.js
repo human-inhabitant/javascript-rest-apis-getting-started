@@ -2,6 +2,7 @@ const debug = require('debug')('app');
 const express = require('express');
 const bodyParser = require('body-parser');
 const pieRepo = require('./repos/pieRepo');
+const errorHelper = require('./helpers/errorHelpers');
 
 const app = express();
 const router = express.Router();
@@ -173,6 +174,10 @@ router.patch('/:id', (req, res, next) => {
 });
 
 app.use('/api/', router);
+
+app.use(errorHelper.logErrors);
+app.use(errorHelper.clientErrorHandler);
+app.use(errorHelper.errorHandler);
 
 app.server = app.listen(port, () => {
   debug(`Start time: ${new Date()}`);
