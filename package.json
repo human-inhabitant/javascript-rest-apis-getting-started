@@ -2,7 +2,7 @@
   "name": "javascript-rest-apis-getting-started",
   "version": "0.6.5",
   "description": "JavaScript REST APIs: Getting Started",
-  "main": "app.js",
+  "main": "index.js",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.0",
     "body-parser": "^1.19.0",
@@ -35,7 +35,10 @@
     "url": "git+https://github.com/human-inhabitant/javascript-rest-apis-getting-started.git"
   },
   "keywords": [
-    "Pluralsight"
+    "Pluralsight",
+    "JavaScript",
+    "Node.js",
+    "Express"
   ],
   "author": "human-inhabitant",
   "license": "copyleft-next-0.3.1",
