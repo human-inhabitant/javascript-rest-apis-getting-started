@@ -1,7 +1,7 @@
 const debug = require('debug')('app:pieRepo');
 const fs = require('fs');
 
-const FILE_NAME = './assets/pies2.json';
+const FILE_NAME = './assets/pies.json';
 const pieRepo = {
   get(resolve, reject) {
     fs.readFile(FILE_NAME, (err, data) => {

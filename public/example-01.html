@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Pie Sample</title>
+  </head>
+  <body>
+    <h1>Pie Sample</h1>
+
+    <button onclick="getAllPies();">Get All Pies</button>
+
+    <script>
+      const URL = "http://192.168.2.101:5000/api/";
+
+      function getAllPies() {
+        console.info("GET All");
+
+        let req = new XMLHttpRequest();
+        req.onreadystatechange = function () {
+          if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+            let response = JSON.parse(this.response);
+            console.info(response.status);
+            console.info(response.statusText);
+            console.info(response.data);
+          }
+        };
+        req.open("GET", URL);
+        req.send();
+      }
+    </script>
+  </body>
+</html>
